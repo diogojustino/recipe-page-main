@@ -87,7 +87,10 @@ table{
     & tr{
         padding: 12px 0px;
         display: flex;
+
+        &:not(:last-child){
         border-bottom: 1px solid var(--stone-150);
+        }
         & > * {
             width: 50%;
             text-align: start;
@@ -179,6 +182,7 @@ table{
 
 
 .divider{
+    border: none;
     height: 1px;
     width: 100%;
     background-color: var(--stone-150);
